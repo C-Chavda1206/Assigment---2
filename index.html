@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <style>
+        * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f0f0f0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-container, .employee-list, .employee-details {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-bottom: 15px;
+    color: #333333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input, select {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.employee-list ul {
+    list-style-type: none;
+}
+
+.employee-list li {
+    margin-bottom: 10px;
+}
+
+.employee-list a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.employee-list a:hover {
+    text-decoration: underline;
+}
+
+.employee-details {
+    text-align: center;
+    color: #666666;
+}
+
+.container {  
+  background-color: #f9f9f9;  
+  padding: 20px;  
+  border: 1px solid #ddd;  
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  
+}  
+  
+h1 {  
+  text-align: center;  
+  font-size: 24px;  
+  margin-bottom: 20px;  
+}  
+  
+table {  
+  width: 100%;  
+  border-collapse: collapse;  
+}  
+  
+th, td {  
+  padding: 10px;  
+  border: 1px solid #ddd;  
+}  
+  
+th {  
+  background-color: #337ab7;  
+  color: #fff;  
+}  
+  
+td {  
+  background-color: #f9f9f9;  
+}  
+  
+.profile-picture {  
+  width: 50px;  
+  height: 50px;  
+  border-radius: 50%;  
+  background-color: #ccc;  
+  margin: 10px;  
+}
+
+h2{
+    text-align: center;
+}
+
+
+
+    </style>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Directory Portal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Company Directory Portal</h1>
+
+        <!-- Employee Registration Form -->
+        <div class="form-container">
+            <h2>Employee Registration Form</h2>
+            <form>
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+
+                <label for="department">Department:</label>
+                <select id="department" name="department">
+                    <option value="IT">IT</option>
+                    <option value="HR">HR</option>
+                    <option value="Finance">Finance</option>
+                    <option value="Marketing">Marketing</option>
+                </select>
+
+                <label for="employeeID">Employee ID:</label>
+                <input type="text" id="employeeID" name="employeeID">
+
+                <label for="profilePicture">Profile Picture URL:</label>
+                <input type="url" id="profilePicture" name="profilePicture">
+
+                <button type="submit">Register Employee</button>
+            </form>
+        </div>
+
+        <!-- Employee List -->
+        <div class="employee-list">
+            <h2>Employee List</h2>
+            <ul>
+                <li><a href="#">Chintu Chavda - chintuchavda1823@gmail.com</a></li>
+                <li><a href="#">Harshit - harshit123@gmail.com</a></li>
+            </ul>
+        </div>
+
+        <div class="container">  
+            <h1>Employee Details</h1>  
+            <table>  
+        <thead>  
+        <tr>  
+         <th>Name</th>  
+         <th>Employee ID</th>  
+         <th>Department</th>  
+         <th>Profile Picture</th>  
+        </tr>  
+        </thead>  
+    <tbody>  
+        <tr>  
+         <td>Chintu Chavda</td>  
+          <td>93280</td>  
+          <td>IT</td>  
+         <td><div class="profile-picture"></div></td>  
+        </tr>  
+        <tr>  
+          <td>Harshit</td>  
+          <td>92651</td>  
+            <td>HR</td>  
+            <td><div class="profile-picture"></div></td>  
+           </tr>  
+         </tbody>  
+            </table>  
+          </div>
+          
+    </div>
+
+    <div class="container">  
+       <h1>Company Location</h1> 
+       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3692.991230993861!2d70.90042410000001!3d22.240411500000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3959b4a660019ee9%3A0x3d6254f36ed0e794!2sRK%20University%20Main%20Campus!5e0!3m2!1sen!2sin!4v1727266479048!5m2!1sen!2sin" width="1480" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+</body>
+</html>
+
+</body>
+</html>
